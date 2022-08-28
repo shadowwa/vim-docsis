@@ -68,8 +68,8 @@ syn keyword TLVValueKeyword TlvValue nextgroup=Hexstr skipwhite
 syn keyword snmpType IPAddress Integer HexString String Gauge Gauge32 TimeTicks
 
 syn region DescBlock start="{" end="}" fold transparent
-syn region comment start="/\*" end="\*/"
-syn region comment start="/\*" end="\*/"
+syn region eComment start="/\*" end="\*/" containedin=Comment
+syn region Comment matchgroup=Comment start="/\*" end="\*/" contains=eComment
 syn region StringDouble start=+"+ skip=+\\\\\|\\"+ end=+"+
 syn region StringSimple start=+'+ skip=+\\\\\|\\"+ end=+'+
 
@@ -103,6 +103,7 @@ hi def link globalKeyword                        Statement
 
 hi def link Todo                    Todo
 hi def link Comment                 Comment
+hi def link eComment                Error
 hi def link TLVKeyword              Type
 hi def link TLVValueKeyword         Type
 hi def link Hexstr                  Number
