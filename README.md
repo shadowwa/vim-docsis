@@ -33,6 +33,11 @@ Plug 'shadowwa/vim-docsis'
 
 in your `.vimrc` or `init.vim`, then restart Vim and run `:PlugInstall`.
 
+### Command
+
+ - `:TLVDecode`: split the TLV string under the cursor and display each part with the Hexadecimal, the Decimal
+   conversion andi, if it looks like a valid string, a string conversion.
+
 ### Folding
 
 Folding is enabled for headers by default.

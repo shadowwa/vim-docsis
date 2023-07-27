@@ -1,0 +1,23 @@
+*docsis.txt*                                Syntax highlighting and TLV helper
+
+This plugins provide syntax highlighting for docsis (Data Over Cable Service
+Interface Specification) configuration files.
+
+It also provides a command to display a more readable version of an TLV (Type
+Length Value) string that can appear in a docsis file.
+
+==============================================================================
+COMMAND                                                       *docsis-command*
+:TLVDecode
+    The plugin will split the TLV string under the cursor and display each
+    part with the Hexadecimal, the Decimal conversion andi, if it looks like a
+    valid string, a string conversion.
+
+==============================================================================
+ABOUT                                                           *docsis-about*
+
+Grab the latest version or report a bug on GitHub:
+
+https://github.com/shadowwa/vim-docsis
+
+ vim:tw=78:et:ft=help:norl:
